@@ -6,7 +6,8 @@ class Solution {
             fast=square(square(fast));
             }while(slow!=fast);
         if(slow==1)
-            return true;
+        {
+            return true;}
         return false;
         
     }
@@ -16,8 +17,8 @@ class Solution {
     while(n!=0)
     {
         d=n%10;
-        n=n/10;
-        sum=sum+d*d;
+        n/=10;
+        sum+=d*d;
     }
     return sum;
 }}
