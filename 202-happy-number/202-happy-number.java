@@ -14,7 +14,7 @@ class Solution {
     public static int square(int n)
     {
         int d,sum=0;
-    while(n!=0)
+    while(n>0)
     {
         d=n%10;
         n/=10;
