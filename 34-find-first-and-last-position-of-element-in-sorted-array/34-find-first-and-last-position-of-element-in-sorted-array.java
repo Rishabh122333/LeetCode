@@ -16,7 +16,7 @@ class Solution {
             if(nums[mid]==target)
             {
                 ans=mid;
-                if(firstoccurence)
+                if(firstoccurence==true)
                     end=mid-1;
                 else
                     beg=mid+1;
