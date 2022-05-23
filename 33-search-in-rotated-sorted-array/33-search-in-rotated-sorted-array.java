@@ -34,7 +34,7 @@ class Solution {
         }
         return -1;
     }
-    public int search(int[] arr, int target) {
+    public static int search(int[] arr, int target) {
        int pivot=findpivot(arr);
         int ans=binarySearch(arr,target,0,pivot);
         if(ans==-1)
