@@ -9,6 +9,6 @@ class Solution {
                 else if(arr[mid]<arr[mid+1])
                     beg=mid+1;
             }
-        return beg;
+        return end;
     }
 }
