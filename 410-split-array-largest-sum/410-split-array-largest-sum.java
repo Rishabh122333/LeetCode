@@ -16,7 +16,7 @@ class Solution {
             else if(piece>m)
                 beg=mid+1;
         }
-            return beg;
+            return end;
     }
     public static int partitions(int arr[],int mid)
     {
