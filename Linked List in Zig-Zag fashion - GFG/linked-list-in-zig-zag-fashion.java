@@ -61,7 +61,6 @@ class Node {
 
 class Solution{
 	public static Node zigZag(Node head){
-        //add code here.
         Node temp=head;
         int t,f=0;
         while(temp!=null && temp.next!=null) {
