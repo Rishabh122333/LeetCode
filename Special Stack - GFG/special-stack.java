@@ -35,7 +35,6 @@ class GfG{
         stack.push(x);
         if(stack.peek()<min.peek())
         {
-            min.pop();
             min.push(x);
         }
 	    //add code here.
