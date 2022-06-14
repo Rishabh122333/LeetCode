@@ -24,24 +24,24 @@ class Solution
 {
     public String FirstNonRepeating(String str)
     {
-        StringBuilder resultantString = new StringBuilder();
-    int[] characterFrequency = new int[26];
+        StringBuilder sb = new StringBuilder();
+    int[] arr = new int[26];
     Queue<Character> queue = new LinkedList<Character>();
     for (int i = 0; i < str.length(); i++) {
       char ch = str.charAt(i);
       queue.add(ch);
-      characterFrequency[ch - 'a']++;
+      arr[ch - 97]++;
       while (!queue.isEmpty()) {
-        if (characterFrequency[queue.peek() - 'a'] > 1)
-          queue.remove();
+        if (arr[queue.peek() - 97] > 1)
+          queue.poll();
         else {
-          resultantString.append(queue.peek());
+          sb.append(queue.peek());
           break;
         }
       }
       if (queue.isEmpty())
-        resultantString.append("#");
+        sb.append("#");
     }
-    return resultantString.toString();
+    return sb.toString();
     }
 }
