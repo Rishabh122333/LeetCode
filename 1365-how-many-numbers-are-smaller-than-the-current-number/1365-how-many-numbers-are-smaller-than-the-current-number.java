@@ -5,7 +5,9 @@ class Solution {
             int c=0;
             for (int j:nums) {
                 if(j<nums[i])
+                {
                     c++;
+                }
             }
             ans[i]=c;
         }
