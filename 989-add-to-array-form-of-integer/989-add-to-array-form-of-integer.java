@@ -5,9 +5,7 @@ class Solution {
         while (--i>=0 || k>0)
         {
             if(i>=0)
-            {
                 k+=num[i];
-            }
             ans.add(k%10);
             k/=10;
         }
