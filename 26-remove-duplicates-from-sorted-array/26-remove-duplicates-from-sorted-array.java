@@ -7,7 +7,9 @@ class Solution {
                 nums[++c]=nums[d++];
             }
             else
+            {
                 d++;
+            }
         }
         return c+1;
     }
