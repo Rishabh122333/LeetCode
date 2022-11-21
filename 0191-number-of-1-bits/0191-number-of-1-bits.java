@@ -8,7 +8,7 @@ public class Solution {
         {
             c++;
         }
-        mask=mask<<1;
+        mask<<=1;
         }
         return c;
     }
