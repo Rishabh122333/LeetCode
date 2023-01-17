@@ -20,7 +20,7 @@ class Solution {
             {
                 if(arr[i-1]<=j)
                 {
-                    t[i][j]=t[i-1][j-arr[i-1]] || t[i-1][j];
+                    t[i][j]=t[i-1][j-arr[i-1]] || t[i-1][j]; //if we want to count the number of subsets then we just replace the or sign with + 
                 }
                 else
                     t[i][j]=t[i-1][j];
