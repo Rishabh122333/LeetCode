@@ -31,6 +31,8 @@ class Solution {
                     t[i][j]=t[i-1][j];
             }
         }
-        return t[coin.length][amount]==Integer.MAX_VALUE-1 ? -1 : t[coin.length][amount];
+        if(t[coin.length][amount]==Integer.MAX_VALUE-1)
+            return -1;
+        return t[coin.length][amount];
     }
 }
