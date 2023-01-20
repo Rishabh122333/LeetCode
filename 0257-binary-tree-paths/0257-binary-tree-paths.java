@@ -30,8 +30,10 @@ class Solution {
             return;
         }
         ans+=root.val+"->";
-        calculate(root.left,ans,list);
-        calculate(root.right,ans,list);
+        if(root.left!=null)
+            calculate(root.left,ans,list);
+        if(root.right!=null)
+            calculate(root.right,ans,list);
         
         
     }
