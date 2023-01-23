@@ -1,4 +1,5 @@
 class Solution {
+    // no of insertions = no. of deletions
     public int minInsertions(String s) {
         StringBuffer sb=new StringBuffer(s);
         return s.length()-lcs(s,sb.reverse().toString());
