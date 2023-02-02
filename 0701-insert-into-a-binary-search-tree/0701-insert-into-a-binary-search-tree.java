@@ -14,10 +14,10 @@
  * }
  */
 class Solution {
-    public TreeNode insertIntoBST(TreeNode choot, int val) {
-        if(choot==null)
+    public TreeNode insertIntoBST(TreeNode root, int val) {
+        if(root==null)
             return new TreeNode(val);
-        TreeNode curr=choot;
+        TreeNode curr=root;
         while(true)
         {
             if(val<curr.val)
@@ -45,7 +45,7 @@ class Solution {
             }
                 
         }
-        return choot;
+        return root;
         
     }
 }
