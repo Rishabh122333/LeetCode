@@ -19,10 +19,10 @@ class Solution {
         if(root==null)
             return root;
         if(root.val < low)
-            return trimBST(root.right, low, high);
+            return trimBST(root.right, low, high); //ans lies in right subtree only so neglect left subtree
         else if(root.val>high)
             return trimBST(root.left, low, high);
-        root.left=trimBST(root.left, low, high);
+        root.left=trimBST(root.left, low, high); //check for left subtree
         root.right=trimBST(root.right, low, high);
         return root;
         
